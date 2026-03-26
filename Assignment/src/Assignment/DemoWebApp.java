@@ -9,7 +9,7 @@ public class DemoWebApp {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://demowebshop.tricentis.com/");
+		driver.get("https://demowebshop.tricentis/");
 		
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.name("FirstName")).sendKeys("Spider");
@@ -17,6 +17,8 @@ public class DemoWebApp {
 		driver.findElement(By.name("Email")).sendKeys("spidermanA1@gmail.com");
 		driver.findElement(By.name("ConfirmPassword")).sendKeys("Spider@123");
 		driver.findElement(By.name("Password")).sendKeys("Spider@123");
+
+		
 	}
 
 }
